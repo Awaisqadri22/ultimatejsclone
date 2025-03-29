@@ -24,3 +24,31 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%); /* Start from the right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left */
+  }
+}
+
+.animate-blink {
+  animation: blink 1s infinite; /* Blinking effect */
+  animation: slide 10s linear infinite; /* Sliding effect */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.animate-blink:hover {
+  animation-play-state: paused; /* Pause the animation on hover */
+}

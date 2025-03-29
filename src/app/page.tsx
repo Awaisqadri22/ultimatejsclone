@@ -12,8 +12,10 @@ export default function Home() {
       </header>
 
       {/* Main Content Area */}
-      <main className="flex-grow flex items-center justify-center">
-        {/* You can add any main content here if needed */}
+      <main className="flex-grow flex items-center justify-center relative">
+        <div className="absolute whitespace-nowrap animate-blink">
+          <span className="text-2xl font-bold">LEARN WITH AWAIS</span>
+        </div>
       </main>
     </div>
   );
